@@ -1,0 +1,44 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "note",
+            "otherEntityName": "note",
+            "otherEntityRelationshipName": "thinkaloud"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "video",
+            "otherEntityName": "video",
+            "otherEntityRelationshipName": "thinkaloud"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "softwareSystem",
+            "otherEntityName": "softwareSystem",
+            "otherEntityField": "tag"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "developer",
+            "otherEntityName": "developer",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "tag",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170602231937",
+    "entityTableName": "think_aloud",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

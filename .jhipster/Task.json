@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "diary",
+            "otherEntityName": "diary",
+            "otherEntityRelationshipName": "task"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "study",
+            "otherEntityName": "study",
+            "otherEntityField": "title"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "tag",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170602231934",
+    "entityTableName": "task",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
